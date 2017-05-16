@@ -1,19 +1,26 @@
-div, p, main, button, input, body, html {
+div, p, main, button, input, body, html, h1 {
   margin: 0;
   padding: 0;
 }
 
-body, button, input {
+body, button, input, h1 {
   font-family: 'Roboto', sans-serif;
   color: #1A1A1A;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 10vw;
+  color: #2c5f31;
+}
+
 .grid {
   display: flex;
+  margin-bottom: 1.5em;
 }
 
 .grid-cell {
-  margin-bottom: 1em;
   flex: 1;
 }
 
@@ -21,8 +28,20 @@ input, button {
   font-size: 7vw;
   text-align: center;
   border: None;
+  border-radius: 0.25em;
+  width: 100%;
+}
 
-  border-radius: 1em;
+#baht-button {
+  border-radius: 0;
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+}
+
+#euro-button {
+  border-radius: 0;
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
 }
 
 input:focus, button:focus {
@@ -30,11 +49,11 @@ input:focus, button:focus {
 }
 
 body {
-  background-color: #005f18;
+  background-color: #efefef;
 }
 
 main {
-  padding-top: 1em;
+  padding: 1.25em; 1.25em;
 }
 
 .toggle-buttons > button {
@@ -48,33 +67,16 @@ main {
   color:#ffffff;
 }
 
-.toggle-buttons > #direction {
-  flex: 0.5;
-  text-align: center;
-}
-
-.toggle-buttons > .to-euros:after {
-  content: ">"
-}
-
-.toggle-buttons > .to-bahts:after {
-  content: "<"
-}
-
 #currency-input, #converted-currency {
   padding: 0.5em; 0.5em;
 }
 
 #currency-input {
-  background-color: #99EAAE;
+  background-color: #44c767
 }
 
 #converted-currency {
-  background-color: #95D2E0;
-}
-
-#currency-selector {
-  margin: 1.5em 1.5em;
+  background-color: #3D96AB;
 }
 
 #convert-button {

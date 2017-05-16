@@ -3,7 +3,6 @@
 class ToggleButtons {
   constructor(buttons_container, observer) {
     this.observer = observer;
-    this.direction = buttons_container.querySelector("#direction");
     this.buttons = buttons_container.querySelectorAll(".button");
     for (let button of this.buttons) {
       button.addEventListener("click", (event) => {
@@ -31,7 +30,6 @@ class ToggleButtons {
   _handle_button_pressed(button) {
     console.log("button pressed");
     this._toggle_to_other();
-    this._toggle_classes(this.direction, 'to-euros', 'to-bahts');
     this.observer(this.currently_selected());
   }
 

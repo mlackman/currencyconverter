@@ -11,15 +11,15 @@
     </main>
 
     <template id="converter-view-template">
+      <h1>Baht-Euro converter</h1>
       <div id="currency-selector", class="toggle-buttons grid">
         <button class="selected button grid-cell" id="baht-button" data-name="THB">Bahts</button>
-        <p id="direction" class="to-euros grid-cell"></p>
         <button class="button grid-cell" id="euro-button" data-name="EUR">Euros</button>
       </div>
-      <div class="grid">
+      <div class="grid input">
         <input id="currency-input" type="number" class="grid-cell" value="0.00">
       </div>
-      <div class="grid">
+      <div class="grid input">
         <input id="converted-currency" value="0.00", type="number" class="grid-cell" readonly>
       </div>
       <div class="grid">
